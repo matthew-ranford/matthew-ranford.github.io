@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  align-items: center;
+  flex-direction: row;
+  background-color: #37393b;
+  justify-content: space-between;
+}
+
+.home {
+  font-family: 'Caveat', cursive;
+  background-color: #37393b;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.page-title {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.page-title:hover {
+  color: rgb(91, 192, 8);
+  text-shadow: 7px 5px 1px rgb(28, 31, 29);
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+}
+.nav-list {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+.nav-list:hover {
+  cursor: pointer;
+  background-color: black;
+  color: rgb(91, 192, 8);
+  border-radius: 1.5em;
+}
