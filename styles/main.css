@@ -59,3 +59,31 @@
   color: rgb(91, 192, 8);
   border-radius: 1.5em;
 }
+
+/* ==============Nav-Bar Responsiveness=============== */
+
+@media (max-width: 949px) {
+  .home {
+    font-size: 1.5rem;
+  }
+  .nav-list {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .nav-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .nav-list {
+    font-size: 0.8rem;
+  }
+}
