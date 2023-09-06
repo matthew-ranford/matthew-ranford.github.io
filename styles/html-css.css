@@ -1,5 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* ==============Nav-Bar Section=============== */
+
+.nav-bar {
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  align-items: center;
+  flex-direction: row;
+  background-color: #37393b;
+  justify-content: space-between;
+}
+
+.home {
+  font-family: 'Caveat', cursive;
+  background-color: #37393b;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.page-title {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.page-title:hover {
+  color: rgb(91, 192, 8);
+  text-shadow: 7px 5px 1px rgb(28, 31, 29);
+  cursor: pointer;
+}
+
+/* ==============Nav-Bar Responsiveness=============== */
+
+@media (max-width: 1400px) {
+  .nav-bar {
+    height: 15vh;
+  }
+}
+
+@media (max-width: 949px) {
+  .home {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 #inline {
