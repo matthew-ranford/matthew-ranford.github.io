@@ -51,7 +51,9 @@
   flex-direction: row;
   list-style: none;
   gap: 1rem;
+  margin-right: 1.1rem;
 }
+
 .nav-list {
   cursor: pointer;
   padding: 10px 15px;
@@ -61,6 +63,7 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
 }
+
 .nav-list:hover {
   cursor: pointer;
   background-color: black;
