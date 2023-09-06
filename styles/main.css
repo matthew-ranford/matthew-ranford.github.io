@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ==============Nav-Bar Section=============== */
 
 .nav-bar {
   top: 0;
@@ -86,4 +94,52 @@
   .nav-list {
     font-size: 0.8rem;
   }
+}
+
+/* ==============About-Section=============== */
+
+#about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
+.flex-content-left {
+  flex-basis: 30%;
+}
+
+.main-image {
+  width: 600px;
+  height: auto;
+  border-radius: 5% 80% 5%;
+}
+
+.flex-content-right {
+  flex-basis: 60%;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Caveat', cursive;
+  color: rgb(255, 255, 255);
+}
+
+.about-p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 2em;
+}
+
+.quote {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 2em;
 }
