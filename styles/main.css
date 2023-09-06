@@ -209,3 +209,48 @@
     font-size: 0.4rem;
   }
 }
+
+/* ==============Technical-Section=============== */
+
+#technical-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 2.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.tech {
+  border-radius: 1.5rem;
+  background-color: #1b3855;
+}
+
+.tech:hover {
+  transform: scale(1.15);
+  background-color: #323435;
+}
+
+.tech-tile {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.tech-tile:hover {
+  color: #136cc5;
+}
