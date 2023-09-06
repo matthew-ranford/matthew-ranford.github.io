@@ -69,6 +69,11 @@
 }
 
 /* ==============Nav-Bar Responsiveness=============== */
+@media (max-width: 1400px) {
+  .nav-bar {
+    height: 15vh;
+  }
+}
 
 @media (max-width: 949px) {
   .home {
