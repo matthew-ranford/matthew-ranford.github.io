@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+#inline {
+  margin-top: 20px;
+  height: 75px;
+}
+
+.inline-1,
+.inline-2,
+.inline-3 {
+  display: inline;
+  margin: 5px;
+  padding: 1px;
+  width: 1000px;
+  border: 1px solid black;
+}
+
+.inline-1:hover,
+.inline-2:hover,
+.inline-3:hover {
+  display: block;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  max-width: 500px;
+}
+
+#inline-block {
+  margin-top: 20px;
+}
+
+.inline-block-1,
+.inline-block-2,
+.inline-block-3 {
+  display: inline-block;
+  border: 1px solid black;
+  height: 300px;
+  width: 420px;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  margin: 20px 0 0 10px;
+  width: 200px;
+  height: 200px;
+}
