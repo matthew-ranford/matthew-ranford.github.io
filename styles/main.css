@@ -154,6 +154,7 @@
 @media (max-width: 1400px) {
   .main-image {
     width: 300px;
+    margin-top: 4rem;
   }
 
   .about-title {
@@ -172,6 +173,7 @@
 @media (max-width: 800px) {
   .main-image {
     width: 200px;
+    margin-top: 2rem;
   }
 
   .about-title {
