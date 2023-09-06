@@ -126,7 +126,7 @@
   text-align: center;
   font-size: 3rem;
   font-family: 'Caveat', cursive;
-  color: rgb(255, 255, 255);
+  color: rgb(175, 13, 13);
 }
 
 .about-p {
@@ -142,4 +142,60 @@
   color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 2em;
+}
+
+/* ==============About-Section Responsiveness=============== */
+
+@media (max-width: 1400px) {
+  .main-image {
+    width: 300px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-p {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-image {
+    width: 200px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-p {
+    font-size: 0.8rem;
+  }
+
+  .quote {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-image {
+    width: 150px;
+  }
+
+  .about-title {
+    font-size: 1rem;
+  }
+
+  .about-p {
+    font-size: 0.5rem;
+  }
+
+  .quote {
+    font-size: 0.4rem;
+  }
 }
