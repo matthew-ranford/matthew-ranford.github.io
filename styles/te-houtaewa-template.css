@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 * {
   margin: 0;
@@ -60,4 +61,32 @@
     font-size: 1rem;
     margin-left: 1rem;
   }
+}
+
+/* ==============Main Section=============== */
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
+.flex-content-left {
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: 'Caveat', cursive;
+  color: rgb(175, 13, 13);
+}
+
+.flex-content-right {
+  flex-basis: 40%;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
 }
