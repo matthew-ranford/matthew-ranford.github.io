@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 949px) {
+  .nav-bar {
+    height: 18vh;
+  }
   .home {
     font-size: 1.5rem;
   }
