@@ -87,3 +87,34 @@
   color: rgb(255, 255, 255);
   font-family: 'Quicksand', sans-serif;
 }
+
+/* ==============Main Section Responsiveness=============== */
+@media (max-width: 1200px) {
+  .flex-content-left {
+    font-size: 1.4rem;
+  }
+
+  .flex-content-right {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-content-left {
+    font-size: 1.2rem;
+  }
+
+  .flex-content-right {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-content-left {
+    font-size: 1rem;
+  }
+
+  .flex-content-right {
+    font-size: 0.5rem;
+  }
+}
