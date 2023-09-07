@@ -77,6 +77,58 @@
   }
 }
 
+/* ==============Main Section=============== */
+
+#main {
+  padding-top: 6.5rem;
+  padding-left: 1rem;
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Caveat', cursive;
+  color: rgb(175, 13, 13);
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1em;
+}
+
+li {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1em;
+}
+
+.links {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.links:hover {
+  color: rgb(91, 192, 8);
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
+  color: rgb(175, 13, 13);
+}
+
+.bottom {
+  padding-bottom: 1em;
+}
+
 #inline {
   margin-top: 20px;
   height: 75px;
@@ -90,6 +142,8 @@
   padding: 1px;
   width: 1000px;
   border: 1px solid black;
+  font-size: 1.2em;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .inline-1:hover,
@@ -101,6 +155,14 @@
   max-width: 500px;
 }
 
+@media (max-width: 800px) {
+  .inline-1:hover,
+  .inline-2:hover,
+  .inline-3:hover {
+    max-width: 300px;
+  }
+}
+
 #inline-block {
   margin-top: 20px;
 }
@@ -110,14 +172,24 @@
 .inline-block-3 {
   display: inline-block;
   border: 1px solid black;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
   height: 300px;
   width: 420px;
-  margin: 10px;
+  margin: 0.4em;
+  padding-top: 1em;
   text-align: center;
 }
 
 img {
   margin: 20px 0 0 10px;
   width: 200px;
+  height: 200px;
+}
+
+.wide {
+  width: 400px;
   height: 200px;
 }
