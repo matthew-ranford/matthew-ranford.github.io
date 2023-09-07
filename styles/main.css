@@ -79,21 +79,18 @@
 }
 
 @media (max-width: 949px) {
-  .nav-bar {
-    height: 18vh;
-  }
   .home {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .nav-list {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 690px) {
   .nav-item {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.15rem;
   }
 }
 
