@@ -177,39 +177,29 @@
 }
 
 @media (max-width: 800px) {
+  #about-section {
+    display: block;
+    text-align: center;
+  }
+
   .main-image {
-    width: 200px;
-    margin-top: 2rem;
+    width: 150px;
+    margin-top: 8rem;
   }
 
   .about-title {
+    margin-top: 1rem;
     font-size: 1.5rem;
   }
 
   .about-p {
+    margin-top: 1rem;
     font-size: 0.8rem;
   }
 
   .quote {
+    margin-top: 1rem;
     font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-image {
-    width: 100px;
-  }
-
-  .about-title {
-    font-size: 1rem;
-  }
-
-  .about-p {
-    font-size: 0.5rem;
-  }
-
-  .quote {
-    font-size: 0.4rem;
   }
 }
 
