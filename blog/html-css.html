@@ -16,90 +16,100 @@
       <h1 class="nav-item">Technical Blog - CSS Concepts</h1>
     </header>
 
-    <h2>What does it mean to display inline vs inline blocks?</h2>
+    <section id="main">
+      <h2 class="title">
+        What does it mean to display inline vs inline blocks?
+      </h2>
 
-    <p>
-      In CSS, the the three main <i>display</i> types are:
-      <li>Inline</li>
-      <li>Block</li>
-      <li>Inline-Block</li>
-    </p>
-    <p>
-      There are other <i>display</i> types such as:
+      <p>
+        In CSS, the the three main <i>display</i> types are:
+        <li>Inline</li>
+        <li>Block</li>
+        <li>Inline-Block</li>
+      </p>
+      <p>
+        There are other <i>display</i> types such as:
+        <li>
+          Flex
+          <a
+            class="links"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout"
+            >(Flexbox model)</a
+          >
+        </li>
+        <li>
+          Grid
+          <a
+            class="links"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout"
+            >(Grid model)</a
+          >
+        </li>
+      </p>
+      <p>
+        These elements behave like a block-level element, and will lay-out
+        content based on their own models.
+      </p>
+
+      <h3>Inline</h3>
+      <li>Respects left & right margins and padding, but not top & bottom</li>
+      <li>Cannot have a width and height set</li>
+      <li>Allows other elements to sit to their left and right</li>
+
+      <img class="wide" src="../images/inline2.png" alt="HTML code" />
+      <img src="../images/inline.png" alt="CSS code" />
+
+      <h3>Block</h3>
       <li>
-        Flex
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout"
-          >(Flexbox model)</a
-        >
+        Respects all margin & padding in which has been defined, top & bottom
+        included
       </li>
-      <li>
-        Grid
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout"
-          >(Grid model)</a
-        >
-      </li>
-      <br />These elements behave like a block-level element, and will lay-out
-      content based on their own models.
-    </p>
+      <li>Always stacks on top of each other</li>
+      <li>Acquires full-width of page if width not specifically defined</li>
 
-    <h3>Inline</h3>
-    <li>Respects left & right margins and padding, but not top & bottom</li>
-    <li>Cannot have a width and height set</li>
-    <li>Allows other elements to sit to their left and right</li>
+      <img src="../images/inline1.png" alt="CSS code" />
 
-    <img src="../images/inline.png" alt="" />
+      <p>Try hovering on each element below for some interactivity 👀</p>
 
-    <h3>Block</h3>
-    <li>
-      Respects all margin & padding in which has been defined, top & bottom
-      included
-    </li>
-    <li>Always stacks on top of each other</li>
-    <li>Acquires full-width of page if width not specifically defined</li>
+      <div id="inline">
+        <div class="inline-1">I'm the first Inline element</div>
+        <div class="inline-2">I'm the second Inline element</div>
+        <div class="inline-3">I'm the third Inline element</div>
+      </div>
+      <p>
+        As you see above, each element in their initial state of
+        <i>inline</i> will sit side by side. When you hover on the first Inline
+        element, it shows you what it would be like as a <b>block</b> level
+        element - forcing the inline elements to a new line to respect the block
+        properties. This is similar to the third Inline element; however,
+        because it is last element in the group it will force its own line,
+        leaving the first two elements to sit inline above it.
+      </p>
+      <p>
+        When hovering on the second inline element this shows you what it would
+        be like if i had declared <i>display:block</i>, as block level elements
+        always stack on top of each other.
+      </p>
 
-    <img src="../images/inline1.png" alt="" />
+      <h3>Inline-Block</h3>
+      <li>Allows other elements to sit to their left and right</li>
+      <li>Respects top & bottom margins and padding</li>
+      <li>Respects height and width</li>
 
-    <p>Try hovering on each element below for some interactivity 👀</p>
+      <img class="wide" src="../images/inline-block2.png" alt="HTML code" />
+      <img src="../images/inline-block.png" alt="CSS code" />
 
-    <div id="inline">
-      <div class="inline-1">I'm the first Inline element</div>
-      <div class="inline-2">I'm the second Inline element</div>
-      <div class="inline-3">I'm the third Inline element</div>
-    </div>
-    <p>
-      As you see above, each element in their initial state of
-      <i>inline</i> will sit side by side. When you hover on the first Inline
-      element, it shows you what it would be like as a <b>block</b> level
-      element - forcing the inline elements to a new line to respect the block
-      properties. This is similar to the third Inline element; however, because
-      it is last element in the group it will force its own line, leaving the
-      first two elements to sit inline above it.
-    </p>
-    <p>
-      When hovering on the second inline element this shows you what it would be
-      like if i had declared <i>display:block</i>, as block level elements
-      always stack on top of each other.
-    </p>
+      <div id="inline-block">
+        <div class="inline-block-1">I'm the first Inline-Block element</div>
+        <div class="inline-block-2">I'm the second Inline-Block element</div>
+        <div class="inline-block-3">I'm the third Inline-Block element</div>
+      </div>
 
-    <h3>Inline-Block</h3>
-    <li>Allows other elements to sit to their left and right</li>
-    <li>Respects top & bottom margins and padding</li>
-    <li>Respects height and width</li>
-
-    <img src="../images/inline-block.png" alt="" />
-
-    <div id="inline-block">
-      <div class="inline-block-1">I'm the first Inline-Block element</div>
-      <div class="inline-block-2">I'm the second Inline-Block element</div>
-      <div class="inline-block-3">I'm the third Inline-Block element</div>
-    </div>
-
-    <p>
-      Inline-block will not force a new line and as you can see above, it allows
-      you to create boxes which you may fill with content of any kind becuase it
-      respects height, width, margin and padding.
-    </p>
+      <p class="bottom">
+        Inline-block will not force a new line and as you can see above, it
+        allows you to create boxes which you may fill with content of any kind
+        becuase it respects height, width, margin and padding.
+      </p>
+    </section>
   </body>
 </html>
