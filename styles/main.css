@@ -126,6 +126,7 @@
   width: 600px;
   height: auto;
   border-radius: 5% 80% 5%;
+  box-shadow: 1px 1px 20px rgb(163, 161, 2);
 }
 
 .flex-content-right {
