@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============Nav-Bar Section=============== */
+
+.nav-bar {
+  top: 0;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  align-items: center;
+  flex-direction: row;
+  background-color: #37393b;
+  justify-content: space-between;
+}
+
+.home {
+  font-family: 'Caveat', cursive;
+  background-color: #37393b;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.nav-item {
+  margin-right: 1.3rem;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.page-title {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.page-title:hover {
+  color: rgb(91, 192, 8);
+  text-shadow: 7px 5px 1px rgb(28, 31, 29);
+  cursor: pointer;
+}
+
+/* ==============Nav-Bar Responsiveness=============== */
+@media (max-width: 1400px) {
+  .nav-bar {
+    height: 15vh;
+  }
+}
+
+@media (max-width: 949px) {
+  .home {
+    font-size: 1.5rem;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-item {
+    margin: auto auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+/* ==============Main Section=============== */
+#main {
+  padding-top: 6.5rem;
+  padding-left: 1rem;
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
+.title {
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  color: rgb(175, 13, 13);
+}
+
+p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+li {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1em;
+}
+
+.bottom {
+  padding-bottom: 1em;
+}
