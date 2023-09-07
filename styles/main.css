@@ -265,8 +265,9 @@
 @media (max-width: 750px) {
   .tech-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-gap: 1rem;
-    max-width: 450px;
+    grid-gap: 0.5rem;
+    max-width: 250px;
+    margin-top: 1rem;
   }
   .tech-tile {
     font-size: 1rem;
@@ -333,8 +334,9 @@
 @media (max-width: 750px) {
   .core-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-gap: 1rem;
-    max-width: 450px;
+    grid-gap: 0.5rem;
+    max-width: 250px;
+    margin-top: 1rem;
   }
   .core-tile {
     font-size: 1rem;
