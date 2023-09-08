@@ -98,6 +98,7 @@ p {
   color: rgb(255, 255, 255);
   font-family: 'Quicksand', sans-serif;
   margin-top: 1em;
+  padding-right: 5px;
 }
 
 li {
@@ -196,7 +197,7 @@ img {
   .inline-block-1,
   .inline-block-2,
   .inline-block-3 {
-    width: 300px;
+    width: 320px;
   }
 
   .title {
