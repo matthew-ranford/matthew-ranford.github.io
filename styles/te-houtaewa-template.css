@@ -17,7 +17,7 @@ body {
 .nav-bar {
   top: 0;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
@@ -48,7 +48,7 @@ body {
 /* ==============Nav-Bar Responsiveness=============== */
 @media (max-width: 1400px) {
   .nav-bar {
-    /* height: 12vh; */
+    height: 15vh;
   }
 }
 
@@ -75,11 +75,11 @@ body {
 }
 
 .title {
-  text-align: center;
-  font-size: 2.5rem;
+  text-align: left;
+  font-size: 2rem;
   font-family: 'Caveat', cursive;
   color: rgb(175, 13, 13);
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 p {
