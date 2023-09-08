@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
 /* ==============Nav-Bar Section=============== */
 
 .nav-bar {
@@ -43,7 +48,7 @@
 /* ==============Nav-Bar Responsiveness=============== */
 @media (max-width: 1400px) {
   .nav-bar {
-    height: 15vh;
+    /* height: 12vh; */
   }
 }
 
@@ -63,58 +68,24 @@
 /* ==============Main Section=============== */
 
 #main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  padding-top: 6.5rem;
+  padding-left: 1rem;
   background-color: #000;
   background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
 }
 
-.flex-content-left {
-  flex-basis: 50%;
+.title {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-family: 'Caveat', cursive;
   color: rgb(175, 13, 13);
+  padding: 5px;
 }
 
-.flex-content-right {
-  flex-basis: 40%;
-  text-align: center;
+p {
   font-size: 1rem;
   color: rgb(255, 255, 255);
   font-family: 'Quicksand', sans-serif;
-}
-
-/* ==============Main Section Responsiveness=============== */
-@media (max-width: 1200px) {
-  .flex-content-left {
-    font-size: 1.4rem;
-  }
-
-  .flex-content-right {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .flex-content-left {
-    font-size: 1.2rem;
-  }
-
-  .flex-content-right {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .flex-content-left {
-    font-size: 1rem;
-  }
-
-  .flex-content-right {
-    font-size: 0.5rem;
-  }
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
