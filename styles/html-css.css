@@ -155,14 +155,6 @@ h3 {
   max-width: 500px;
 }
 
-@media (max-width: 800px) {
-  .inline-1:hover,
-  .inline-2:hover,
-  .inline-3:hover {
-    max-width: 300px;
-  }
-}
-
 #inline-block {
   margin-top: 20px;
 }
@@ -192,4 +184,48 @@ img {
 .wide {
   width: 400px;
   height: 200px;
+}
+
+/* ==============Main Responsiveness=============== */
+
+@media (max-width: 450px) {
+  .wide {
+    width: 300px;
+  }
+
+  .inline-block-1,
+  .inline-block-2,
+  .inline-block-3 {
+    width: 300px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  .inline-1,
+  .inline-2,
+  .inline-3 {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inline-1:hover,
+  .inline-2:hover,
+  .inline-3:hover {
+    max-width: 300px;
+  }
 }
