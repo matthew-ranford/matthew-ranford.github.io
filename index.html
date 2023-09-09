@@ -9,52 +9,49 @@
   </head>
   <body>
     <header class="nav-bar">
-      <nav class="home">
-        <a class="page-title" href="index.html"><h1>Matthew's Blog Page</h1></a>
+      <a class="page-title" href="index.html"
+        ><h1 class="home">Matthew's Blog Page</h1></a
+      >
+      <nav>
+        <ul class="nav-item">
+          <li><a class="nav-list" href="#about-section">About</a></li>
+          <li><a class="nav-list" href="#technical-section">Tech</a></li>
+          <li><a class="nav-list" href="#core-section">Core</a></li>
+          <li><a class="nav-list" href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <ul class="nav-item">
-        <li><a class="nav-list" href="#about-section">About</a></li>
-        <li><a class="nav-list" href="#technical-section">Technical</a></li>
-        <li><a class="nav-list" href="#core-section">Core</a></li>
-        <li><a class="nav-list" href="#contact">Contact</a></li>
-      </ul>
     </header>
 
     <section id="about-section">
       <a id="about" href="#about"></a>
-      <div class="flex-content-left">
-        <img
-          class="main-image"
-          src="images/IMG_ABOUT.jpg"
-          alt="Photo of Matthew"
-        />
-      </div>
 
-      <div class="flex-content-right">
-        <div class="about-title">
-          <h1>The Beginning of the Dev Academy Journey</h1>
-        </div>
-        <div>
-          <p class="about-p">
-            Gidday, this is the start of my journey at Dev Academy and i will
-            continue to build on my current position as the course progresses!
-            <br />The journey is a process which we must embrace as a whole and
-            i look forward to sharing it with you!
-          </p>
-          <p class="quote">
-            "The steps you take don't need to be big, they just need to take you
-            in the right direction"
-          </p>
-        </div>
+      <div class="header">
+        <h1>The Beginning of the Dev Academy Journey</h1>
+
+        <p class="header-p">
+          Gidday, this is the start of my journey at Dev Academy and i will
+          continue to build on my current position as the course progresses!
+          <br /><br />
+          The journey is a process which we must embrace as a whole and i look
+          forward to sharing it with you!
+        </p>
+        <div><img class="main-image" src="images/IMG_ABOUT.jpg" alt="" /></div>
+
+        <p class="bottom-p">
+          "The steps you take don't need to be big, they just need to take you
+          in the right direction"
+        </p>
       </div>
     </section>
 
     <section id="technical-section">
       <div class="tech-grid">
         <a class="tech tech-tile" href="blog/te-houtaewa-template.html">
+          <img class="tech-image" src="images/gardens-unsplash.jpg" alt="" />
           <p class="tech-tile">Te-Houtaewa</p></a
         >
         <a class="tech tech-tile" href="blog/html-css.html">
+          <img class="tech-image" src="images/css-unsplash.jpg" alt="" />
           <p class="tech-tile">CSS Concepts</p></a
         >
         <a class="tech tech-tile" href="">
@@ -69,9 +66,11 @@
     <section id="core-section">
       <div class="core-grid">
         <a class="core core-tile" href="blog/learning-plan.html">
+          <img class="core-image" src="images/learning-unsplash.jpg" alt="" />
           <p class="core-tile">Learning Plan</p></a
         >
         <a class="core core-tile" href="blog/identity-values.html">
+          <img class="core-image" src="images/identity-unsplash.jpg" alt="" />
           <p class="core-tile">Identity, Values & Strengths</p></a
         >
         <a class="core core-tile" href="">
