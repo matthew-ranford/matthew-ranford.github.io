@@ -16,100 +16,125 @@ body {
 
 .nav-bar {
   top: 0;
-  width: 100vw;
-  height: 8vh;
+  width: 100%;
+  height: 6rem;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
   align-items: center;
   flex-direction: row;
-  background-color: #37393b;
+  background-color: #3e4144;
   justify-content: space-between;
-}
-
-.home {
-  font-family: 'Caveat', cursive;
-  background-color: #37393b;
-  margin-left: 2rem;
-  font-size: 2rem;
-}
-
-.nav-item {
-  margin-right: 1.3rem;
-  font-size: 1.5rem;
-  font-family: 'Quicksand', sans-serif;
-  color: rgb(255, 255, 255);
 }
 
 .page-title {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(216, 211, 211);
 }
 
 .page-title:hover {
-  color: rgb(91, 192, 8);
+  color: rgb(15, 176, 216);
   text-shadow: 7px 5px 1px rgb(28, 31, 29);
   cursor: pointer;
 }
 
+.home {
+  font-family: 'Caveat', cursive;
+  background-color: none;
+  margin-left: 1rem;
+  font-size: min(5vw, 2em);
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.5em;
+}
+
+.nav-list {
+  cursor: pointer;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: rgb(216, 211, 211);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+}
+
+.nav-list:hover {
+  background-color: rgba(37, 32, 32, 0.856);
+  color: rgb(15, 176, 216);
+  border-radius: 1em;
+  cursor: default;
+}
+
 /* ==============Nav-Bar Responsiveness=============== */
-@media (max-width: 1400px) {
-  .nav-bar {
-    height: 15vh;
-  }
-}
 
-@media (max-width: 949px) {
-  .home {
-    font-size: 1.5rem;
-  }
+@media (min-width: 405px) and (max-width: 470px) {
   .nav-item {
-    font-size: 1rem;
+    margin-left: 5em;
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 300px) and (max-width: 404px) {
   .nav-item {
-    margin: auto auto;
+    margin-left: 3.5em;
   }
 }
 
-@media (max-width: 400px) {
-  .home {
-    font-size: 1rem;
-    margin-left: 1rem;
-  }
-}
+/* ==============Main Section=============== */
 
 #main {
-  padding-top: 6.5rem;
-  padding-left: 1rem;
-  background-color: #000;
-  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.7) 50%
+    ),
+    url('../images/grass-unsplash.jpg');
+  height: auto;
+  width: 100%;
+  background-size: cover;
 }
 
-.title {
-  text-align: left;
-  font-size: 2rem;
+.header {
+  color: rgb(216, 211, 211);
   font-family: 'Caveat', cursive;
-  color: rgb(175, 13, 13);
+  padding-top: 4em;
+  text-align: left;
 }
 
-p {
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  font-family: 'Quicksand', sans-serif;
+.header h1 {
+  font-size: 3em;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-li {
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
+.header-p {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(216, 211, 211);
+  font-size: 1.2em;
+  margin-top: 0.7em;
+  text-align: left;
+  padding: 1em;
+}
+
+.header-list {
+  font-size: 1.2em;
+  color: rgb(216, 211, 211);
   font-family: 'Quicksand', sans-serif;
   margin-top: 1em;
+  padding-left: 2em;
+  padding-right: 0.5em;
 }
 
-.bottom {
-  padding-bottom: 1em;
+/* ==============About-Section Responsiveness=============== */
+
+@media (max-width: 500px) {
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2.5em;
+  }
 }
