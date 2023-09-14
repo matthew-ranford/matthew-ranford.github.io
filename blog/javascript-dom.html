@@ -57,11 +57,64 @@
     <button id="button">CLICK ME!!</button>
     <img src="../images/js-button-example.png" alt="" />
 
+    <h1>Difference between accessing data from Arrays & Objects</h1>
+    <p>
+      An Array is like a shopping list, where you can add many items to them,
+      varying from one word, to a few, numbers, decimal numbers and so on.. see
+      example below: <br />
+      <img src="../images/array-example.png" alt="" /> <br />
+      While there is 7 items in this list, the item named 'list' is actually
+      only at position 6 of this array, this is because an array starts at a 0
+      index. <br />
+      So if i wanted to grab the first element in the array(shopping list), i
+      could; console.log(array[1]) and this would log 'i am Matt' to the
+      console. Array's aren't very handy on their own, but are perfect when it
+      comes to loops! <br /><br />
+      An Object is a little different to the shopping list style of an Array
+      where it's sort of like the contacts directory in your phone. Check
+      example below: <br />
+      <img src="../images/object-example.png" alt="" />
+      <br />
+      With an Object, you have a key, value pair. Key = Name, Value = Matthew.
+      If you wanted to update someone's details from your main directory
+      (phoneContacts), you could do the following: <br />
+      <img src="../images/object-example1.png" alt="" />
+      <br />
+      This is called dot notation, as you see the periods between each Object
+      name. Like a phone, you would go into phone contacts, then click on
+      contact name, and finally update name.
+    </p>
+
     <script>
       document.getElementById('button').addEventListener('click', (event) => {
         document.getElementById('button').innerHTML =
           'Wow i changed, so snazzy right!'
       })
+
+      let array = ['Hello', 'i am Matt', 30, '30', 2.75, 'array', 'list']
+      console.log(array[1])
+
+      let phoneContacts = {
+        firstContact: {
+          Name: 'Matthew',
+          Number: 123,
+        },
+        secondContact: {
+          Name: 'Dane',
+          Number: 456,
+        },
+        thirdContact: {
+          Name: 'Corey',
+          Number: 789,
+        },
+      }
+      console.log(phoneContacts)
+
+      let updateContact = phoneContacts.firstContact.Name
+
+      updateContact = 'Matt'
+
+      console.log(updateContact)
     </script>
   </body>
 </html>
