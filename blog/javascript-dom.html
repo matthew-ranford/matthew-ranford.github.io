@@ -17,10 +17,7 @@
       functionality happens, for instance, you click on a button and then
       something else happens. <br />
       HTML & CSS are scripting languages, whereas JavaScript is a programming
-      language. <br />
-      The Document Object Model or 'DOM' for short provides the means to
-      manipulate the HTML document with JavaScript and ties your HTML & CSS
-      together.
+      language.
     </p>
 
     <h1>Control Flow & Loops</h1>
@@ -41,5 +38,30 @@
       still evaluated to true, but as soon as the routine ended with the sick
       day, the conditions evaluated to false, ending the loop.
     </p>
+
+    <h1>The DOM & how you interact with it</h1>
+    <p>
+      The Document Object Model or 'DOM' for short provides the means to
+      manipulate the HTML document with JavaScript and ties your HTML & CSS
+      together. <br />
+      Picture a tree, and each branch is a node (which is made up of your HTML
+      document content); with JavaScript you may manipulate the content on any
+      of these nodes; for instance try clicking this button below!
+      <br />
+      This is an example of how you may interact with HTML content with DOM
+      manipulation. The button element has an ID of "button" which can be access
+      with JavaScript and now when the button is clicked the inner HTML will
+      change! Showing at a basic level how JavaScript powers the interactivity
+      within the website.
+    </p>
+    <button id="button">CLICK ME!!</button>
+    <img src="../images/js-button-example.png" alt="" />
+
+    <script>
+      document.getElementById('button').addEventListener('click', (event) => {
+        document.getElementById('button').innerHTML =
+          'Wow i changed, so snazzy right!'
+      })
+    </script>
   </body>
 </html>
