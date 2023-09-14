@@ -18,98 +18,128 @@
       </nav>
     </header>
 
-    <h1>JavaScript and its relationship to HTML & CSS</h1>
-    <p>
-      Think of the following as the human body; HTML is the bone structure which
-      is all the writing on the page by itself, which also includes images etc.
-      no style to it just the foundation of the webpage. <br />
-      CSS is the flesh of the webpage where you start to see the beauty and
-      colour of it, along with the positioning of all your content<br />
-      JavaScript is the muscle of the webpage where interactivity and
-      functionality happens, for instance, you click on a button and then
-      something else happens. <br />
-      HTML & CSS are scripting languages, whereas JavaScript is a programming
-      language.
-    </p>
+    <section id="main">
+      <div class="header">
+        <h1>JavaScript and its relationship to HTML & CSS</h1>
+        <p class="header-p">
+          Think of the following as the human body; HTML is the bone structure
+          which is all the writing on the page by itself, which also includes
+          images etc. no style to it just the foundation of the webpage.
+        </p>
+        <p class="header-p">
+          CSS is the flesh of the webpage where you start to see the beauty and
+          colour of it, along with the positioning of all your content
+        </p>
+        <p class="header-p">
+          JavaScript is the muscle of the webpage where interactivity and
+          functionality happens, for instance, you click on a button and then
+          something else happens.
+        </p>
+        <p class="header-p">
+          HTML & CSS are scripting languages, whereas JavaScript is a
+          programming language.
+        </p>
 
-    <h1>Control Flow & Loops</h1>
-    <p>
-      So, lets say that everyday during the work week up until thursday, you
-      have the exact same routine with absolutley no changes whatsoever. You
-      wake up on friday and you are sick and you stay in bed all day. Now
-      because you are sick your routine has changed for that day, it no longer
-      meets the conditions of your routine for those first four days. That loop
-      you were on is no longer true and the conditions of your routine have now
-      changed to false because of this day in bed. Ending the Loop. <br />
-      Control flow in JavaScript refers to the order in which the computer
-      executes statements in the script, starting from the first line and ending
-      at the last line. <br />
-      Loops are apart of the control flow in JavaScript, basically, there is a
-      start and end point and conditions in-between. If you never had that sick
-      day in bed the loop would have continued to run because the conditions
-      still evaluated to true, but as soon as the routine ended with the sick
-      day, the conditions evaluated to false, ending the loop.
-    </p>
+        <h1>Control Flow & Loops</h1>
+        <p class="header-p">
+          So, lets say that everyday during the work week up until thursday, you
+          have the exact same routine with absolutley no changes whatsoever. You
+          wake up on friday and you are sick and you stay in bed all day. Now
+          because you are sick your routine has changed for that day, it no
+          longer meets the conditions of your routine for those first four days.
+          That loop you were on is no longer true and the conditions of your
+          routine have now changed to false because of this day in bed. Ending
+          the Loop.
+        </p>
+        <p class="header-p">
+          Control flow in JavaScript refers to the order in which the computer
+          executes statements in the script, starting from the first line and
+          ending at the last line.
+        </p>
+        <p class="header-p">
+          Loops are apart of the control flow in JavaScript, basically, there is
+          a start and end point and conditions in-between. If you never had that
+          sick day in bed the loop would have continued to run because the
+          conditions still evaluated to true, but as soon as the routine ended
+          with the sick day, the conditions evaluated to false, ending the loop.
+        </p>
 
-    <h1>The DOM & how you interact with it</h1>
-    <p>
-      The Document Object Model or 'DOM' for short provides the means to
-      manipulate the HTML document with JavaScript and ties your HTML & CSS
-      together. <br />
-      Picture a tree, and each branch is a node (which is made up of your HTML
-      document content); with JavaScript you may manipulate the content on any
-      of these nodes; for instance try clicking this button below!
-      <br />
-      This is an example of how you may interact with HTML content with DOM
-      manipulation. The button element has an ID of "button" which can be access
-      with JavaScript and now when the button is clicked the inner HTML will
-      change! Showing at a basic level how JavaScript powers the interactivity
-      within the website.
-    </p>
-    <button id="button">CLICK ME!!</button>
-    <img src="../images/js-button-example.png" alt="" />
+        <h1>The DOM & how you interact with it</h1>
+        <p class="header-p">
+          The Document Object Model or 'DOM' for short provides the means to
+          manipulate the HTML document with JavaScript and ties your HTML & CSS
+          together.
+        </p>
+        <p class="header-p">
+          Picture a tree, and each branch is a node (which is made up of your
+          HTML document content); with JavaScript you may manipulate the content
+          on any of these nodes; for instance try clicking this button below!
+        </p>
+        <p class="header-p">
+          This is an example of how you may interact with HTML content with DOM
+          manipulation. The button element has an ID of "button" which can be
+          access with JavaScript and now when the button is clicked the inner
+          HTML will change! Showing at a basic level how JavaScript powers the
+          interactivity within the website.
+        </p>
+        <button id="button">CLICK ME!!</button>
 
-    <h1>Difference between accessing data from Arrays & Objects</h1>
-    <p>
-      An Array is like a shopping list, where you can add many items to them,
-      varying from one word, to a few, numbers, decimal numbers and so on.. see
-      example below: <br />
-      <img src="../images/array-example.png" alt="" /> <br />
-      While there is 7 items in this list, the item named 'list' is actually
-      only at position 6 of this array, this is because an array starts at a 0
-      index. <br />
-      So if i wanted to grab the first element in the array(shopping list), i
-      could; console.log(array[1]) and this would log 'i am Matt' to the
-      console. Array's aren't very handy on their own, but are perfect when it
-      comes to loops! <br /><br />
-      An Object is a little different to the shopping list style of an Array
-      where it's sort of like the contacts directory in your phone. Check
-      example below: <br />
-      <img src="../images/object-example.png" alt="" />
-      <br />
-      With an Object, you have a key, value pair. Key = Name, Value = Matthew.
-      If you wanted to update someone's details from your main directory
-      (phoneContacts), you could do the following: <br />
-      <img src="../images/object-example1.png" alt="" />
-      <br />
-      This is called dot notation, as you see the periods between each Object
-      name. Like a phone, you would go into phone contacts, then click on
-      contact name, and finally update name.
-    </p>
+        <img src="../images/js-button-example.png" alt="" />
 
-    <h1>Functions & why they are helpful</h1>
-    <p>
-      Functions are one of the fundamental building blocks in JavaScript,
-      they're very versatile and allow you to re-use code wherever necessary.
-      It's like going to the dentist and each step in the process of getting
-      your teeth checked the dentist has a process in place for each checkup.
-      Each check is conducted in the same way but will occasionally run into a
-      problem, that's where you have the flexibility to reuse this code to add
-      in variables that you encounter. The function is like a dentists assitant
-      who processes the function in a way that's effortless and with each
-      checkup, the function is invoked and all the information is there for the
-      dentist to work with.
-    </p>
+        <h1>Difference between accessing data from Arrays & Objects</h1>
+        <p class="header-p">
+          An Array is like a shopping list, where you can add many items to
+          them, varying from one word, to a few, numbers, decimal numbers and so
+          on.. see example below:
+        </p>
+        <img src="../images/array-example.png" alt="" />
+        <p class="header-p">
+          While there is 7 items in this list, the item named 'list' is actually
+          only at position 6 of this array, this is because an array starts at a
+          0 index.
+        </p>
+        <p class="header-p">
+          So if i wanted to grab the first element in the array(shopping list),
+          i could; console.log(array[1]) and this would log 'i am Matt' to the
+          console. Array's aren't very handy on their own, but are perfect when
+          it comes to loops!
+        </p>
+        <p class="header-p">
+          An Object is a little different to the shopping list style of an Array
+          where it's sort of like the contacts directory in your phone. Check
+          example below:
+        </p>
+        <img src="../images/object-example.png" alt="" />
+        <p class="header-p">
+          With an Object, you have a key, value pair. Key = Name, Value =
+          Matthew. If you wanted to update someone's details from your main
+          directory (phoneContacts), you could do the following:
+        </p>
+        <img src="../images/object-example1.png" alt="" />
+        <p class="header-p">
+          This is called dot notation, as you see the periods between each
+          Object name. Like a phone, you would go into phone contacts, then
+          click on contact name, and finally update name.
+        </p>
+
+        <h1>Functions & why they are helpful</h1>
+        <p class="header-p">
+          Functions are one of the fundamental building blocks in JavaScript,
+          they're very versatile and allow you to re-use code wherever
+          necessary. It's like going to the dentist and each step in the process
+          of getting your teeth checked the dentist has a process in place for
+          each checkup.
+        </p>
+        <p class="header-p">
+          Each check is conducted in the same way but will occasionally run into
+          a problem, that's where you have the flexibility to reuse this code to
+          add in variables that you encounter. The function is like a dentists
+          assitant who processes the function in a way that's effortless and
+          with each checkup, the function is invoked and all the information is
+          there for the dentist to work with.
+        </p>
+      </div>
+    </section>
 
     <script>
       document.getElementById('button').addEventListener('click', (event) => {
