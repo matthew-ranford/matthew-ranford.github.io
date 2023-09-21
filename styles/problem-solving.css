@@ -81,3 +81,60 @@ body {
     margin-left: 3.5em;
   }
 }
+
+/* ==============Main Section=============== */
+
+#main {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.7) 50%
+    ),
+    url('../images/grass-unsplash.jpg');
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.header {
+  color: rgb(216, 211, 211);
+  font-family: 'Caveat', cursive;
+  padding-top: 4em;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 3em;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.header-p {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(216, 211, 211);
+  font-size: 1.2em;
+  margin-top: 0.7em;
+  text-align: left;
+  padding: 1em;
+}
+
+.header-list {
+  font-size: 1.2em;
+  color: rgb(216, 211, 211);
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1em;
+  padding-left: 2em;
+  padding-right: 0.5em;
+}
+
+/* ==============About-Section Responsiveness=============== */
+
+@media (max-width: 500px) {
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2.5em;
+  }
+}
