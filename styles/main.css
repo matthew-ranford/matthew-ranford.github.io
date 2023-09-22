@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+  background-image: linear-gradient(95deg, #3a3d40 25%, #181719 75%);
+}
+
 /* ==============Nav-Bar Section=============== */
 
 .nav-bar {
