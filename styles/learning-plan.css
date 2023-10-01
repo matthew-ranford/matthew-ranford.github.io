@@ -110,6 +110,10 @@ body {
   padding-right: 0.5em;
 }
 
+.title {
+  color: #000;
+}
+
 .header-p {
   font-family: 'Quicksand', sans-serif;
   color: rgb(216, 211, 211);
