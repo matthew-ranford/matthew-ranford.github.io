@@ -91,7 +91,7 @@ body {
   }
 
   .nav-item {
-    flex-direction: row;
+    /* flex-direction: row; */
     margin-left: 5.8rem;
     gap: 1.5rem;
   }
@@ -194,10 +194,10 @@ body {
 }
 
 @media (min-width: 100px) and (max-width: 199px) {
-  .side-icon {
-    /* margin-left: 20%; */
+  /* .side-icon { */
+  /* margin-left: 20%;
     font-size: 0.2em;
-  }
+  } */
 
   .nav-item {
     margin-left: 0.1em;
