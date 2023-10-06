@@ -74,20 +74,99 @@ body {
   border-radius: 1em;
 }
 
+.side-icon {
+  display: none;
+  color: rgb(216, 211, 211);
+}
+
 /* ==============Nav-Bar Responsiveness=============== */
 
-@media (min-width: 405px) and (max-width: 499px) {
+@media (max-width: 595px) {
+  .side-icon {
+    display: block;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-right: 1rem;
+  }
+
   .nav-item {
-    margin-left: 2.5em;
+    flex-direction: row;
+    margin-left: 5.8rem;
+    gap: 1.5rem;
+  }
+
+  .visible {
+    display: none;
+  }
+
+  .height {
+    height: 120px;
   }
 }
 
-@media (min-width: 200px) and (max-width: 404px) {
+@media (min-width: 507px) and (max-width: 594px) {
   .nav-item {
-    margin-left: 1.5em;
+    margin-left: 5rem;
   }
+}
+
+@media (min-width: 450px) and (max-width: 506px) {
+  .nav-item {
+    margin-left: 4.5rem;
+  }
+
   .nav-list {
-    font-size: 1.1em;
+    font-size: 1rem;
+  }
+
+  .height {
+    height: 100px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 449px) {
+  .nav-item {
+    margin-left: 2rem;
+  }
+
+  .nav-list {
+    font-size: 1rem;
+  }
+
+  .height {
+    height: 90px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 399px) {
+  .side-icon {
+    margin-left: 40%;
+  }
+
+  .nav-item {
+    margin-left: 1.8em;
+  }
+
+  .nav-list {
+    font-size: 0.8rem;
+  }
+
+  .height {
+    height: 80px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .side-icon {
+    margin-left: 35%;
+  }
+
+  .nav-item {
+    margin-left: 0.5em;
+  }
+
+  .nav-list {
+    font-size: 0.8rem;
   }
 }
 
