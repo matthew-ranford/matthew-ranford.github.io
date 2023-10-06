@@ -87,6 +87,7 @@ body {
     cursor: pointer;
     margin-left: 50%;
     margin-right: 1rem;
+    font-size: 0.7rem;
   }
 
   .nav-item {
@@ -139,10 +140,10 @@ body {
 }
 
 @media (min-width: 350px) and (max-width: 399px) {
-  .side-icon {
+  /* .side-icon {
     /* margin-left: 35%; */
-    font-size: 0.7em;
-  }
+  /* font-size: 0.7em; */
+  /* } */
 
   .nav-item {
     margin-left: 1.8em;
@@ -158,10 +159,10 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 349px) {
-  .side-icon {
+  /* .side-icon {
     /* margin-left: 35%; */
-    font-size: 0.5em;
-  }
+  /* font-size: 0.5em; */
+  /* }  */
 
   .nav-item {
     margin-left: 0.5em;
@@ -173,10 +174,10 @@ body {
 }
 
 @media (min-width: 200px) and (max-width: 299px) {
-  .side-icon {
+  /* .side-icon {
     /* margin-left: 30%; */
-    font-size: 0.3em;
-  }
+  /* font-size: 0.3em; */
+  /* } */
 
   .nav-item {
     margin-left: 0.3em;
