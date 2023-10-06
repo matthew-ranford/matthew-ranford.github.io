@@ -85,14 +85,14 @@ body {
   .side-icon {
     display: block;
     cursor: pointer;
-    margin-left: 50%;
+    margin-left: 12rem;
     margin-right: 1rem;
     font-size: 0.7rem;
   }
 
   .nav-item {
     /* flex-direction: row; */
-    margin-left: 5.8rem;
+    /* margin-left: 5.8rem; */
     gap: 1.5rem;
   }
 
@@ -135,7 +135,7 @@ body {
   }
 
   .height {
-    height: 90px;
+    height: 100px;
   }
 }
 
@@ -154,7 +154,7 @@ body {
   }
 
   .height {
-    height: 80px;
+    height: 100px;
   }
 }
 
