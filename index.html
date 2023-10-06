@@ -6,8 +6,15 @@
     <title>Matthew's Blog</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="shortcut icon" href="images/IMG_ABOUT.jpg" type="image/jpg" />
+    <!-- For contact section -->
     <script
       src="https://kit.fontawesome.com/7df5c05608.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- For nav-bar section -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
   </head>
@@ -16,8 +23,11 @@
       <a class="page-title" href="index.html"
         ><h1 class="home">Matthew's Blog Page</h1></a
       >
+      <div class="side-icon" onclick="toggleNav()">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </div>
       <nav>
-        <ul class="nav-item">
+        <ul class="nav-item visible">
           <li><a class="nav-list" href="#about-section">About</a></li>
           <li><a class="nav-list" href="#technical-section">Tech</a></li>
           <li><a class="nav-list" href="#core-section">Core</a></li>
@@ -144,5 +154,6 @@
         </a>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
